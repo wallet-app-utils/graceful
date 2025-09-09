@@ -3,7 +3,10 @@ name: Release
 on:
   push:
     branches:
-      - master   # запускать только при пуше в master
+      - master
+
+permissions:
+  contents: write   # нужно, чтобы пушить теги
 
 jobs:
   tag:
